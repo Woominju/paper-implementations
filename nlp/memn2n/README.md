@@ -1,13 +1,13 @@
 # End-To-End Memory Networks
 
-*NIPS 2015* · [Notion summary](https://road-lamp-b0c.notion.site/3fa64a44030c812c9c1cf7eb6318f37d) · [Paper](https://arxiv.org/abs/1503.08895) · [Official code](https://github.com/facebook/MemNN)
+NIPS 2015 | [Notion summary](https://road-lamp-b0c.notion.site/3fa64a44030c812c9c1cf7eb6318f37d) | [Paper](https://arxiv.org/abs/1503.08895) | [Official code](https://github.com/facebook/MemNN)
 
-## What this implements
+## What is in the code
 - Soft attention over sentence memories with multiple hops (u <- u + o)
 - Adjacent weight tying, position encoding and temporal encoding
 - Attention weights printed per hop for one story
 
-## Simplifications
+## Differences from the paper
 A synthetic version of bAbI task 1, which needs only one supporting fact, so one hop already solves it; multi-hop tasks (e.g. task 2) are not included.
 
 ## Run

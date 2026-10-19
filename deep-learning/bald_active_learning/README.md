@@ -1,13 +1,13 @@
 # BALD & BatchBALD
 
-*arXiv 2011 / NeurIPS 2019* · [Notion summary](https://road-lamp-b0c.notion.site/3fa64a44030c8127886ef440cbf2dd98) · [Paper](https://arxiv.org/abs/1112.5745) · [Official code](https://github.com/BlackHC/BatchBALD)
+arXiv 2011 / NeurIPS 2019 | [Notion summary](https://road-lamp-b0c.notion.site/3fa64a44030c8127886ef440cbf2dd98) | [Paper](https://arxiv.org/abs/1112.5745) | [Official code](https://github.com/BlackHC/BatchBALD)
 
-## What this implements
+## What is in the code
 - BALD score I[y; w | x] = H[E_w p(y|x,w)] - E_w H[p(y|x,w)] estimated with MC dropout
 - BatchBALD-style greedy batch selection: exact joint entropy while small, then importance sampling over label configurations
 - Random vs. BALD vs. BatchBALD acquisition on scikit-learn digits (3 seeds)
 
-## Simplifications
+## Differences from the paper
 A small MLP with dropout instead of a Bayesian CNN; the greedy batch only considers the 100 points with the highest BALD score. In this small setting BatchBALD does not beat top-k BALD.
 
 ## Run

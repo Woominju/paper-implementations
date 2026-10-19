@@ -1,13 +1,13 @@
 # Distributed Representations of Words and Phrases and their Compositionality
 
-*NIPS 2013* · [Notion summary](https://road-lamp-b0c.notion.site/3fa64a44030c810894b0f06a25d430ab) · [Paper](https://arxiv.org/abs/1310.4546) · [Official code](https://code.google.com/archive/p/word2vec/)
+NIPS 2013 | [Notion summary](https://road-lamp-b0c.notion.site/3fa64a44030c810894b0f06a25d430ab) | [Paper](https://arxiv.org/abs/1310.4546) | [Official code](https://code.google.com/archive/p/word2vec/)
 
-## What this implements
+## What is in the code
 - Skip-gram with negative sampling; negatives drawn from the unigram distribution to the 3/4 power
 - Subsampling of frequent words with keep probability sqrt(t / f(w))
 - Analogy test by vector arithmetic (capital - country + country')
 
-## Simplifications
+## Differences from the paper
 Trained on a synthetic corpus of country, capital and language sentences instead of billions of words; phrase detection is not implemented.
 
 ## Run

@@ -1,13 +1,13 @@
 # Mastering the game of Go with deep neural networks and tree search
 
-*Nature, 2016* · [Notion summary](https://road-lamp-b0c.notion.site/3fa64a44030c8115a514d652c7af8e08) · [Paper](https://www.nature.com/articles/nature16961)
+Nature, 2016 | [Notion summary](https://road-lamp-b0c.notion.site/3fa64a44030c8115a514d652c7af8e08) | [Paper](https://www.nature.com/articles/nature16961)
 
-## What this implements
+## What is in the code
 - Policy and value heads on one network
 - PUCT tree search with leaves evaluated by the value network
 - Self-play training with visit counts as policy targets and game results as value targets
 
-## Simplifications
+## Differences from the paper
 Tic-tac-toe instead of Go, and no supervised stage on human games (closer to AlphaGo Zero). Against a perfect minimax player the agent goes from losing every game to drawing half of them.
 
 ## Run

@@ -1,13 +1,13 @@
 # MSCRED: Unsupervised Anomaly Detection and Diagnosis in Multivariate Time Series
 
-*AAAI 2019* · [Notion summary](https://road-lamp-b0c.notion.site/3f664a44030c81098b2bcfcecb681858) · [Paper](https://arxiv.org/abs/1811.08055)
+AAAI 2019 | [Notion summary](https://road-lamp-b0c.notion.site/3f664a44030c81098b2bcfcecb681858) | [Paper](https://arxiv.org/abs/1811.08055)
 
-## What this implements
+## What is in the code
 - Multi-scale signature matrices (sensor-by-sensor inner products over 10, 30 and 60 steps)
 - Convolutional encoder-decoder trained to reconstruct normal signature matrices
 - Anomaly score = number of badly reconstructed entries; root-cause ranking by residual row sums
 
-## Simplifications
+## Differences from the paper
 The attention-based ConvLSTM between encoder and decoder is omitted. Root cause is ranked correctly first in 2 of 3 injected anomalies.
 
 ## Run

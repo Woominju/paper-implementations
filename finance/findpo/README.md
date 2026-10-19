@@ -1,13 +1,13 @@
 # FinDPO: Financial Sentiment Analysis for Algorithmic Trading through Preference Optimization of LLMs
 
-*ICAIF 2025* · [Notion summary](https://road-lamp-b0c.notion.site/3fa64a44030c81b49fa9d6b663d258a1) · [Paper](https://arxiv.org/abs/2507.18417)
+ICAIF 2025 | [Notion summary](https://road-lamp-b0c.notion.site/3fa64a44030c81b49fa9d6b663d258a1) | [Paper](https://arxiv.org/abs/2507.18417)
 
-## What this implements
+## What is in the code
 - DPO loss with a frozen reference policy obtained by supervised fine-tuning on noisy labels
 - Logits turned into a continuous score p(positive) - p(negative)
 - Daily long-short portfolio (top third vs. bottom third by score)
 
-## Simplifications
+## Differences from the paper
 A small bag-of-words network stands in for the LLM, and headlines and returns are synthetic, so the backtest numbers only illustrate the pipeline.
 
 ## Run

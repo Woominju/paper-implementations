@@ -1,13 +1,13 @@
 # Anomaly Transformer: Time Series Anomaly Detection with Association Discrepancy
 
-*ICLR 2022* · [Notion summary](https://road-lamp-b0c.notion.site/3fa64a44030c81b3b639cc27a0b51420) · [Paper](https://arxiv.org/abs/2110.02642) · [Official code](https://github.com/thuml/Anomaly-Transformer)
+ICLR 2022 | [Notion summary](https://road-lamp-b0c.notion.site/3fa64a44030c81b3b639cc27a0b51420) | [Paper](https://arxiv.org/abs/2110.02642) | [Official code](https://github.com/thuml/Anomaly-Transformer)
 
-## What this implements
+## What is in the code
 - Anomaly-Attention with a learnable Gaussian prior-association and a softmax series-association
 - Symmetric-KL association discrepancy and the minimax training strategy
 - Anomaly score softmax(-AssDis) x reconstruction error, evaluated with raw PR-AUC and with point-adjusted F1
 
-## Simplifications
+## Differences from the paper
 One layer on synthetic data. On raw PR-AUC this minimal model scores close to random and below plain reconstruction error, while random scores get the highest point-adjusted F1. This matches what I found in my thesis: point adjustment hides the difference between a model and random guessing.
 
 ## Run

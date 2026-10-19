@@ -1,13 +1,13 @@
 # Improving Language Understanding by Generative Pre-Training (GPT-1)
 
-*OpenAI Technical Report, 2018* · [Notion summary](https://road-lamp-b0c.notion.site/3fa64a44030c8153a3adec88b54de3e3) · [Paper](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf) · [Official code](https://github.com/openai/finetune-transformer-lm)
+OpenAI Technical Report, 2018 | [Notion summary](https://road-lamp-b0c.notion.site/3fa64a44030c8153a3adec88b54de3e3) | [Paper](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf) | [Official code](https://github.com/openai/finetune-transformer-lm)
 
-## What this implements
+## What is in the code
 - Causal Transformer decoder pre-trained as a language model on unlabeled text
 - Fine-tuning with a linear head on the final token and an auxiliary LM loss (lambda = 0.5)
 - Comparison with the same network trained from scratch on the same 40 labels
 
-## Simplifications
+## Differences from the paper
 2 layers and 64 dimensions instead of 12 layers and 768; synthetic review sentences instead of BooksCorpus.
 
 ## Run
