@@ -36,7 +36,3 @@ These are study implementations, not reproductions of the papers' reported numbe
 pip install -r requirements.txt
 cd time-series/anomaly_transformer && python main.py
 ```
-
-## How these were written
-
-The implementations were written with the help of an AI coding assistant (Claude), based on my paper summaries. Each one is meant to be run and read alongside the Notion summary to check the key idea of the paper.
